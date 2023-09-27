@@ -17,11 +17,8 @@ services:
       PASSWORD: "password"
       JUPYTER_TOKEN: "token"
     volumes:
-      - ../../exp:/workdir/root/exp
       - ../../develop:/workdir/root/develop
       - ../../deploy:/workdir/root/deploy
       - ../../local_qai:/usr/local/qai
-      - ../../../../lib/:/workdir/root/lib
-      - ../../../../template/:/workdir/root/template
       - ../../tool:/workdir/root/tool
       - ../../:/workdir/root/top_dir
