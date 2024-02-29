@@ -642,7 +642,7 @@ def move_log(file_path: str=None) -> str:
 #########################################
 
 @log(logger)
-@ait_main(ait_output, path_helper)
+@ait_main(ait_output, path_helper, is_ait_launch)
 def main() -> None:
 
     # load inventory
