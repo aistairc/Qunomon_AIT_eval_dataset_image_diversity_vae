@@ -90,7 +90,7 @@ if not is_ait_launch:
 #########################################
 if not is_ait_launch:
     requirements_generator.add_package('pandas', '1.3.1')
-    requirements_generator.add_package('scikit-learn')
+    requirements_generator.add_package('scikit-learn','1.3.2')
     requirements_generator.add_package('matplotlib', '3.3.0')
     requirements_generator.add_package('tensorflow', '2.7.3')
     requirements_generator.add_package('tensorflow-cpu', '2.7.3')
@@ -172,12 +172,12 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_name('eval_dataset_image_diversity_vae')
     manifest_genenerator.set_ait_description('学習用画像データの特徴を学習させたVAEモデルで評価用学習データの特徴量を算出する\nその特徴量の差が0に近いほど、評価用画像データが学習用データの特徴を網羅できていると評価できる')
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_dataset_image_diversity_vae')
-    manifest_genenerator.set_ait_version('0.2')
+    manifest_genenerator.set_ait_version('0.3')
     manifest_genenerator.add_ait_keywords('images')
     manifest_genenerator.add_ait_keywords('Variational Auto-Encoder')
     manifest_genenerator.add_ait_keywords('VAE')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
-    manifest_genenerator.set_ait_quality('https://ait-hub.pj.aist.go.jp/ait-hub/api/0.0.1/qualityDimensions/AIQM_Guideline/Diversity_of_test_data')
+    manifest_genenerator.set_ait_quality('https://ait-hub.pj.aist.go.jp/ait-hub/api/0.0.1/qualityDimensions/機械学習品質マネジメントガイドライン第三版/B-1データセットの被覆性')
     inventory_requirement_train_images = manifest_genenerator.format_ait_inventory_requirement(format_=['gz'])
     manifest_genenerator.add_ait_inventories(name='train_images',
                                              type_='dataset',
