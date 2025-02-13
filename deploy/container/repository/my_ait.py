@@ -33,7 +33,7 @@
 # 
 # * new cerarion
 
-# In[1]:
+# In[ ]:
 
 
 #########################################
@@ -90,8 +90,9 @@ if not is_ait_launch:
 #########################################
 if not is_ait_launch:
     requirements_generator.add_package('pandas', '2.2.3')
-    requirements_generator.add_package('scikit-learn','1.6.0')
-    requirements_generator.add_package('matplotlib', '3.9.4')
+    requirements_generator.add_package('numpy', '2.0.2')
+    requirements_generator.add_package('scikit-learn','1.6.1')
+    requirements_generator.add_package('matplotlib', '3.10.0')
     requirements_generator.add_package('tensorflow', '2.18.0')
     requirements_generator.add_package('tensorflow-cpu', '2.18.0')
 
@@ -172,7 +173,7 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_name('eval_dataset_image_diversity_vae')
     manifest_genenerator.set_ait_description('学習用画像データの特徴を学習させたVAEモデルで評価用学習データの特徴量を算出する\nその特徴量の差が0に近いほど、評価用画像データが学習用データの特徴を網羅できていると評価できる')
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_dataset_image_diversity_vae')
-    manifest_genenerator.set_ait_version('0.6')
+    manifest_genenerator.set_ait_version('0.7')
     manifest_genenerator.add_ait_keywords('images')
     manifest_genenerator.add_ait_keywords('Variational Auto-Encoder')
     manifest_genenerator.add_ait_keywords('VAE')
