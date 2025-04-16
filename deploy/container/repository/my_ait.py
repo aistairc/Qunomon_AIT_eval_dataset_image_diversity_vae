@@ -92,9 +92,9 @@ if not is_ait_launch:
     requirements_generator.add_package('pandas', '2.2.3')
     requirements_generator.add_package('numpy', '2.0.2')
     requirements_generator.add_package('scikit-learn','1.6.1')
-    requirements_generator.add_package('matplotlib', '3.10.0')
-    requirements_generator.add_package('tensorflow', '2.18.0')
-    requirements_generator.add_package('tensorflow-cpu', '2.18.0')
+    requirements_generator.add_package('matplotlib', '3.10.1')
+    requirements_generator.add_package('tensorflow', '2.18.1')
+    requirements_generator.add_package('tensorflow-cpu', '2.18.1')
 
 
 # In[5]:
